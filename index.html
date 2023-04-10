@@ -109,10 +109,7 @@
         }
 
         .load-bar {
-            -webkit-appearance: none;
-            background-color: #9a905d;
             appearance: inherit;
-            border: 1px solid #00000054;
             position: relative;
             height: 5px;
             width: 113px;
@@ -294,7 +291,7 @@
             rangePercent = (rangeWidth / rangePoints * 100) / rangeWidth,
             rangeBackgroundWidth = (range.max - range.value) * rangePercent
 
-        range.style.background = `linear-gradient(to left, #FFFFFF1A, #FFFFFF1A ${rangeBackgroundWidth}%, #3983FF ${rangeBackgroundWidth}%, #3983FF 100%)`;
+        range.style.background = `linear-gradient(to left, rgba(20, 21, 27, 0.26), rgba(20, 21, 27, 0.26) ${rangeBackgroundWidth}%, #4D74E8 ${rangeBackgroundWidth}%, #4D74E8 100%)`;
     }
     setRangeBackground(rangeInput)
 </script>
